@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State private var stack: [String] = []
-    
     var body: some View {
         TabView {
             NavigationDestinationView()
                 .tabItem {
-                    Text("First")
+                    Text("첫번째 네비게이션")
                 }
             NavigationLinkView()
                 .tabItem {
-                    Text("Second")
+                    Text("두번째 네비게이션")
                 }
         }
     }

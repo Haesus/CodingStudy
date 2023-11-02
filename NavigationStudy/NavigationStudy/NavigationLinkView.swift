@@ -8,20 +8,18 @@
 import SwiftUI
 
 struct NavigationLinkView: View {
-    
-    @State private var stack: [String] = []
-    
-    private var str: String = "next Page"
+
+    private var str: String = "변수를 받아서 페이지 구성 가능"
     
     var body: some View {
         NavigationStack {
             NavigationLink {
-                PageOneView(stack: $stack)
+                NavigationLinkOneView()
             } label: {
-                Text("페이지 1")
+                Text("첫번째 페이지로 이동합니다.")
             }
             NavigationLink(str) {
-                PageOneView(stack: $stack)
+                NavigationLinkOneView()
             }
             .foregroundStyle(Color.black)
         }

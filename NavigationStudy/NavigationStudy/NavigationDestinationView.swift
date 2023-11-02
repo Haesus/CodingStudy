@@ -19,15 +19,14 @@ struct NavigationDestinationView: View {
             }, label: {
                 Text("페이지 1로")
             })
-            .navigationDestination(for: String.self) { value in
-                if value == "1" {
+            .navigationDestination(for: String.self) { stack in
+                if stack == "1" {
                     PageOneView(stack: $stack)
-                } else if value == "2" {
+                } else if stack == "2" {
                     PageTwoView(stack: $stack)
                 }
             }
         }
-
     }
 }
 

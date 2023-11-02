@@ -13,7 +13,7 @@ struct PageTwoView: View {
     
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            Text("이곳은 두번째 네비게이션을 타고 온 곳입니다.")
             
             Button("이전으로") {
                 print(stack)
@@ -25,13 +25,6 @@ struct PageTwoView: View {
                 print(stack)
                 stack.removeAll()
                 print(stack)
-            }
-        }
-        .navigationDestination(for: String.self) { stack in
-            if stack == "" {
-                ContentView()
-            } else if stack == "1" {
-                PageOneView(stack: $stack)
             }
         }
     }
