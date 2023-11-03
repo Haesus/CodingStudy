@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PageOneView: View {
+struct NavigationDestinationViewOne: View {
     
     @Binding var stack: [String]
         

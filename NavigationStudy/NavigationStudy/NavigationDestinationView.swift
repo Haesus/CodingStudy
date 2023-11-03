@@ -21,9 +21,9 @@ struct NavigationDestinationView: View {
             })
             .navigationDestination(for: String.self) { stack in
                 if stack == "1" {
-                    PageOneView(stack: $stack)
+                    NavigationDestinationViewOne(stack: $stack)
                 } else if stack == "2" {
-                    PageTwoView(stack: $stack)
+                    NavigationDestinationViewTwo(stack: $stack)
                 }
             }
         }

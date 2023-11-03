@@ -18,8 +18,8 @@
 		FA2C7AD12AF261D100582106 /* NavigationStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AD02AF261D100582106 /* NavigationStudyTests.swift */; };
 		FA2C7ADB2AF261D100582106 /* NavigationStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7ADA2AF261D100582106 /* NavigationStudyUITests.swift */; };
 		FA2C7ADD2AF261D100582106 /* NavigationStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7ADC2AF261D100582106 /* NavigationStudyUITestsLaunchTests.swift */; };
-		FA2C7AEA2AF2636B00582106 /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AE92AF2636B00582106 /* PageOneView.swift */; };
-		FA2C7AEC2AF26FF700582106 /* PageTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AEB2AF26FF700582106 /* PageTwoView.swift */; };
+		FA2C7AEA2AF2636B00582106 /* NavigationDestinationViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AE92AF2636B00582106 /* NavigationDestinationViewOne.swift */; };
+		FA2C7AEC2AF26FF700582106 /* NavigationDestinationViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AEB2AF26FF700582106 /* NavigationDestinationViewTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		FA2C7AD62AF261D100582106 /* NavigationStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2C7ADA2AF261D100582106 /* NavigationStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStudyUITests.swift; sourceTree = "<group>"; };
 		FA2C7ADC2AF261D100582106 /* NavigationStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FA2C7AE92AF2636B00582106 /* PageOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; };
-		FA2C7AEB2AF26FF700582106 /* PageTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoView.swift; sourceTree = "<group>"; };
+		FA2C7AE92AF2636B00582106 /* NavigationDestinationViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationViewOne.swift; sourceTree = "<group>"; };
+		FA2C7AEB2AF26FF700582106 /* NavigationDestinationViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationViewTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 				FA2C7ABF2AF261D000582106 /* NavigationStudyApp.swift */,
 				FA2C7AC12AF261D000582106 /* ContentView.swift */,
 				FA05E0C22AF2A5EE00F15650 /* NavigationDestinationView.swift */,
-				FA2C7AE92AF2636B00582106 /* PageOneView.swift */,
-				FA2C7AEB2AF26FF700582106 /* PageTwoView.swift */,
+				FA2C7AE92AF2636B00582106 /* NavigationDestinationViewOne.swift */,
+				FA2C7AEB2AF26FF700582106 /* NavigationDestinationViewTwo.swift */,
 				FA05E0C02AF2A59B00F15650 /* NavigationLinkView.swift */,
 				FA05E0C42AF3E57600F15650 /* NavigationLinkOneView.swift */,
 				FA05E0C62AF3E58700F15650 /* NavigationLinkTwoView.swift */,
@@ -275,11 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2C7AEA2AF2636B00582106 /* PageOneView.swift in Sources */,
+				FA2C7AEA2AF2636B00582106 /* NavigationDestinationViewOne.swift in Sources */,
 				FA05E0C72AF3E58700F15650 /* NavigationLinkTwoView.swift in Sources */,
 				FA05E0C12AF2A59B00F15650 /* NavigationLinkView.swift in Sources */,
 				FA2C7AC22AF261D000582106 /* ContentView.swift in Sources */,
-				FA2C7AEC2AF26FF700582106 /* PageTwoView.swift in Sources */,
+				FA2C7AEC2AF26FF700582106 /* NavigationDestinationViewTwo.swift in Sources */,
 				FA05E0C52AF3E57600F15650 /* NavigationLinkOneView.swift in Sources */,
 				FA2C7AC02AF261D000582106 /* NavigationStudyApp.swift in Sources */,
 				FA05E0C32AF2A5EE00F15650 /* NavigationDestinationView.swift in Sources */,
