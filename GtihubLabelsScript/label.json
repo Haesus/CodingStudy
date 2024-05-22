@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Feature",
+        "color": "0E8A16",
+        "description": "기능이 추가될 사항이 있을 경우 해당 라벨을 통해 표시하세요."
+        
+    },
+    {
+        "name": "Documentation",
+        "color": "1D76DB",
+        "description": "문서화 작업이 필요할 경우 해당 라벨을 통해 표시하세요."
+        
+    },
+    {
+        "name": "Bug / HotFix",
+        "color": "B60205",
+        "description": "버그나 치명적인 수정사항이 발생했을 경우 해당 라벨을 통해 표시하세요."
+        
+    },
+    {
+        "name": "Fix",
+        "color": "FBCA04",
+        "description": "수정될 사항이 있을 경우 해당 라벨을 통해 표시하세요."
+    },
+    {
+        "name": "Refactoring",
+        "color": "006B75",
+        "description": "리팩토링할 사항에 해당 라벨을 통해 표시하세요."
+    },
+    {
+        "name": "FrontEnd",
+        "color": "D93F0B",
+        "description": "론트 단 작업일 경우 해당 라벨을 통해 표시하세요."
+    },
+    {
+        "name": "BackEnd",
+        "color": "5319E7",
+        "description": "백엔드 단 작업일 경우 해당 라벨을 통해 표시하세요."
+    }
+]
