@@ -3,19 +3,16 @@
         "name": "Feature",
         "color": "0E8A16",
         "description": "기능이 추가될 사항이 있을 경우 해당 라벨을 통해 표시하세요."
-        
     },
     {
         "name": "Documentation",
         "color": "1D76DB",
         "description": "문서화 작업이 필요할 경우 해당 라벨을 통해 표시하세요."
-        
     },
     {
         "name": "Bug / HotFix",
         "color": "B60205",
         "description": "버그나 치명적인 수정사항이 발생했을 경우 해당 라벨을 통해 표시하세요."
-        
     },
     {
         "name": "Fix",
