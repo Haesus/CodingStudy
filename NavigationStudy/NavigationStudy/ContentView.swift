@@ -10,13 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            NavigationViewOne()
+                .tabItem {
+                    Text("iOS 16 이전")
+                }
+            NormallyNavigationLinkOne()
+                .tabItem {
+                    Text("일반적인 네이게이션 사용")
+                }
+            NavigationDestinationOne()
+                .tabItem {
+                    Text("Value 네비게이션")
+                }
+            NavigationStackDestination()
+                .tabItem {
+                    Text("path 네비게이션")
+                }
             NavigationDestinationView()
                 .tabItem {
-                    Text("첫번째 네비게이션")
-                }
-            NavigationLinkView()
-                .tabItem {
-                    Text("두번째 네비게이션")
+                    Text("path button 네비게이션")
                 }
         }
     }

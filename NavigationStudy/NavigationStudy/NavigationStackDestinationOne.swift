@@ -1,13 +1,13 @@
 //
-//  PageOneView.swift
+//  NavigationStackDestinationOne.swift
 //  NavigationStudy
 //
-//  Created by 윤해수 on 11/1/23.
+//  Created by 윤해수 on 6/16/24.
 //
 
 import SwiftUI
 
-struct NavigationDestinationViewOne: View {
+struct NavigationStackDestinationOne: View {
     @Binding var stack: [String]
         
     var body: some View {
@@ -15,12 +15,6 @@ struct NavigationDestinationViewOne: View {
             Text("현재 스택은 \(stack).")
             
             NavigationLink("2 페이지로", value: "2")
-            
-            Button("이전으로") {
-                print(stack)
-                stack.removeLast()
-                print(stack)
-            }
             
             Button("stack 모두 없애기") {
                 stack.removeAll()
@@ -30,5 +24,5 @@ struct NavigationDestinationViewOne: View {
 }
 
 #Preview {
-    NavigationDestinationViewOne(stack: .constant(["1"]))
+    NavigationStackDestinationOne(stack: .constant(["1"]))
 }

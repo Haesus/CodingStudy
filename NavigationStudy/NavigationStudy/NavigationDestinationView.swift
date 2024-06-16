@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct NavigationDestinationView: View {
-    
+    @State private var isShowSheet = false
+    @State private var isShowSheet1 = false
     @State private var stack: [String] = []
     
     var body: some View {
@@ -20,11 +21,21 @@ struct NavigationDestinationView: View {
                 Text("페이지 1로")
             })
             .navigationDestination(for: String.self) { stack in
-                if stack == "1" {
-                    NavigationDestinationViewOne(stack: $stack)
-                } else if stack == "2" {
-                    NavigationDestinationViewTwo(stack: $stack)
+                NavigationDestinationViewOne(stack: $stack)
+            }
+            .toolbar {
+                Button("시트") {
+                    isShowSheet = true
                 }
+                Button("풀스크린") {
+                    isShowSheet1 = true
+                }
+            }
+            .sheet(isPresented: $isShowSheet) {
+                Text("시트페이지")
+            }
+            .fullScreenCover(isPresented: $isShowSheet1) {
+                Text("풀스크린시트 페이지")
             }
         }
     }

@@ -27,7 +27,7 @@
     {
         "name": "FrontEnd",
         "color": "D93F0B",
-        "description": "론트 단 작업일 경우 해당 라벨을 통해 표시하세요."
+        "description": "프론트 단 작업일 경우 해당 라벨을 통해 표시하세요."
     },
     {
         "name": "BackEnd",

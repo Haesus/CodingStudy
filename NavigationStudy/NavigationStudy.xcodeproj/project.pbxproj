@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA05E0C12AF2A59B00F15650 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05E0C02AF2A59B00F15650 /* NavigationLinkView.swift */; };
 		FA05E0C32AF2A5EE00F15650 /* NavigationDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05E0C22AF2A5EE00F15650 /* NavigationDestinationView.swift */; };
-		FA05E0C52AF3E57600F15650 /* NavigationLinkOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05E0C42AF3E57600F15650 /* NavigationLinkOneView.swift */; };
-		FA05E0C72AF3E58700F15650 /* NavigationLinkTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05E0C62AF3E58700F15650 /* NavigationLinkTwoView.swift */; };
+		FA19643E2C1F0572005C56AC /* NormallyNavigationLinkOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19643D2C1F0572005C56AC /* NormallyNavigationLinkOne.swift */; };
+		FA1964402C1F0670005C56AC /* NormallyNavigationLinkTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19643F2C1F0670005C56AC /* NormallyNavigationLinkTwo.swift */; };
+		FA1964422C1F06DF005C56AC /* NormallyNavigationLinkThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1964412C1F06DF005C56AC /* NormallyNavigationLinkThree.swift */; };
+		FA1964442C1F0822005C56AC /* NormallyNavigationLinkFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1964432C1F0822005C56AC /* NormallyNavigationLinkFour.swift */; };
+		FA1964462C1F0A59005C56AC /* NavigationViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1964452C1F0A59005C56AC /* NavigationViewOne.swift */; };
+		FA1964482C1F0ACB005C56AC /* NavigationViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1964472C1F0ACB005C56AC /* NavigationViewTwo.swift */; };
+		FA19644A2C1F0B16005C56AC /* NavigationViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1964492C1F0B16005C56AC /* NavigationViewThree.swift */; };
+		FA19644C2C1F1106005C56AC /* NavigationDestinationOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19644B2C1F1106005C56AC /* NavigationDestinationOne.swift */; };
+		FA19644E2C1F119E005C56AC /* NavigationDestinationTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19644D2C1F119E005C56AC /* NavigationDestinationTwo.swift */; };
+		FA1964502C1F13D6005C56AC /* NavigationStackDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19644F2C1F13D6005C56AC /* NavigationStackDestination.swift */; };
+		FA1964522C1F1495005C56AC /* NavigationStackDestinationOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1964512C1F1494005C56AC /* NavigationStackDestinationOne.swift */; };
 		FA2C7AC02AF261D000582106 /* NavigationStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7ABF2AF261D000582106 /* NavigationStudyApp.swift */; };
 		FA2C7AC22AF261D000582106 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AC12AF261D000582106 /* ContentView.swift */; };
 		FA2C7AC42AF261D000582106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2C7AC32AF261D000582106 /* Assets.xcassets */; };
@@ -19,7 +27,6 @@
 		FA2C7ADB2AF261D100582106 /* NavigationStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7ADA2AF261D100582106 /* NavigationStudyUITests.swift */; };
 		FA2C7ADD2AF261D100582106 /* NavigationStudyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7ADC2AF261D100582106 /* NavigationStudyUITestsLaunchTests.swift */; };
 		FA2C7AEA2AF2636B00582106 /* NavigationDestinationViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AE92AF2636B00582106 /* NavigationDestinationViewOne.swift */; };
-		FA2C7AEC2AF26FF700582106 /* NavigationDestinationViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2C7AEB2AF26FF700582106 /* NavigationDestinationViewTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA05E0C02AF2A59B00F15650 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
 		FA05E0C22AF2A5EE00F15650 /* NavigationDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationView.swift; sourceTree = "<group>"; };
-		FA05E0C42AF3E57600F15650 /* NavigationLinkOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkOneView.swift; sourceTree = "<group>"; };
-		FA05E0C62AF3E58700F15650 /* NavigationLinkTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkTwoView.swift; sourceTree = "<group>"; };
+		FA19643D2C1F0572005C56AC /* NormallyNavigationLinkOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormallyNavigationLinkOne.swift; sourceTree = "<group>"; };
+		FA19643F2C1F0670005C56AC /* NormallyNavigationLinkTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormallyNavigationLinkTwo.swift; sourceTree = "<group>"; };
+		FA1964412C1F06DF005C56AC /* NormallyNavigationLinkThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormallyNavigationLinkThree.swift; sourceTree = "<group>"; };
+		FA1964432C1F0822005C56AC /* NormallyNavigationLinkFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormallyNavigationLinkFour.swift; sourceTree = "<group>"; };
+		FA1964452C1F0A59005C56AC /* NavigationViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewOne.swift; sourceTree = "<group>"; };
+		FA1964472C1F0ACB005C56AC /* NavigationViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewTwo.swift; sourceTree = "<group>"; };
+		FA1964492C1F0B16005C56AC /* NavigationViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewThree.swift; sourceTree = "<group>"; };
+		FA19644B2C1F1106005C56AC /* NavigationDestinationOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationOne.swift; sourceTree = "<group>"; };
+		FA19644D2C1F119E005C56AC /* NavigationDestinationTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationTwo.swift; sourceTree = "<group>"; };
+		FA19644F2C1F13D6005C56AC /* NavigationStackDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDestination.swift; sourceTree = "<group>"; };
+		FA1964512C1F1494005C56AC /* NavigationStackDestinationOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackDestinationOne.swift; sourceTree = "<group>"; };
 		FA2C7ABC2AF261D000582106 /* NavigationStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2C7ABF2AF261D000582106 /* NavigationStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStudyApp.swift; sourceTree = "<group>"; };
 		FA2C7AC12AF261D000582106 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,7 +70,6 @@
 		FA2C7ADA2AF261D100582106 /* NavigationStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStudyUITests.swift; sourceTree = "<group>"; };
 		FA2C7ADC2AF261D100582106 /* NavigationStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA2C7AE92AF2636B00582106 /* NavigationDestinationViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationViewOne.swift; sourceTree = "<group>"; };
-		FA2C7AEB2AF26FF700582106 /* NavigationDestinationViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationViewTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +122,19 @@
 			children = (
 				FA2C7ABF2AF261D000582106 /* NavigationStudyApp.swift */,
 				FA2C7AC12AF261D000582106 /* ContentView.swift */,
+				FA1964452C1F0A59005C56AC /* NavigationViewOne.swift */,
+				FA1964472C1F0ACB005C56AC /* NavigationViewTwo.swift */,
+				FA1964492C1F0B16005C56AC /* NavigationViewThree.swift */,
+				FA19643D2C1F0572005C56AC /* NormallyNavigationLinkOne.swift */,
+				FA19643F2C1F0670005C56AC /* NormallyNavigationLinkTwo.swift */,
+				FA1964412C1F06DF005C56AC /* NormallyNavigationLinkThree.swift */,
+				FA1964432C1F0822005C56AC /* NormallyNavigationLinkFour.swift */,
+				FA19644B2C1F1106005C56AC /* NavigationDestinationOne.swift */,
+				FA19644D2C1F119E005C56AC /* NavigationDestinationTwo.swift */,
+				FA19644F2C1F13D6005C56AC /* NavigationStackDestination.swift */,
+				FA1964512C1F1494005C56AC /* NavigationStackDestinationOne.swift */,
 				FA05E0C22AF2A5EE00F15650 /* NavigationDestinationView.swift */,
 				FA2C7AE92AF2636B00582106 /* NavigationDestinationViewOne.swift */,
-				FA2C7AEB2AF26FF700582106 /* NavigationDestinationViewTwo.swift */,
-				FA05E0C02AF2A59B00F15650 /* NavigationLinkView.swift */,
-				FA05E0C42AF3E57600F15650 /* NavigationLinkOneView.swift */,
-				FA05E0C62AF3E58700F15650 /* NavigationLinkTwoView.swift */,
 				FA2C7AC32AF261D000582106 /* Assets.xcassets */,
 				FA2C7AC52AF261D000582106 /* Preview Content */,
 			);
@@ -276,13 +297,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2C7AEA2AF2636B00582106 /* NavigationDestinationViewOne.swift in Sources */,
-				FA05E0C72AF3E58700F15650 /* NavigationLinkTwoView.swift in Sources */,
-				FA05E0C12AF2A59B00F15650 /* NavigationLinkView.swift in Sources */,
+				FA1964502C1F13D6005C56AC /* NavigationStackDestination.swift in Sources */,
 				FA2C7AC22AF261D000582106 /* ContentView.swift in Sources */,
-				FA2C7AEC2AF26FF700582106 /* NavigationDestinationViewTwo.swift in Sources */,
-				FA05E0C52AF3E57600F15650 /* NavigationLinkOneView.swift in Sources */,
+				FA1964422C1F06DF005C56AC /* NormallyNavigationLinkThree.swift in Sources */,
+				FA1964402C1F0670005C56AC /* NormallyNavigationLinkTwo.swift in Sources */,
+				FA19644E2C1F119E005C56AC /* NavigationDestinationTwo.swift in Sources */,
+				FA19644A2C1F0B16005C56AC /* NavigationViewThree.swift in Sources */,
+				FA1964522C1F1495005C56AC /* NavigationStackDestinationOne.swift in Sources */,
 				FA2C7AC02AF261D000582106 /* NavigationStudyApp.swift in Sources */,
+				FA1964482C1F0ACB005C56AC /* NavigationViewTwo.swift in Sources */,
+				FA1964462C1F0A59005C56AC /* NavigationViewOne.swift in Sources */,
 				FA05E0C32AF2A5EE00F15650 /* NavigationDestinationView.swift in Sources */,
+				FA19644C2C1F1106005C56AC /* NavigationDestinationOne.swift in Sources */,
+				FA1964442C1F0822005C56AC /* NormallyNavigationLinkFour.swift in Sources */,
+				FA19643E2C1F0572005C56AC /* NormallyNavigationLinkOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
