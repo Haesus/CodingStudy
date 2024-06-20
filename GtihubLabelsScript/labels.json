@@ -33,5 +33,50 @@
         "name": "BackEnd",
         "color": "5319E7",
         "description": "백엔드 단 작업일 경우 해당 라벨을 통해 표시하세요."
+    },
+    {
+        "name": "Priority.High",
+        "color": "B60205",
+        "description": "작업 우선 순위 높음."
+    },
+    {
+        "name": "Priority.Medium",
+        "color": "FBCA04",
+        "description": "작업 우선 순위 보통."
+    },
+    {
+        "name": "Priority.Low",
+        "color": "0E8A16",
+        "description": "작업 우선 순위 낮음."
+    },
+    {
+        "name": "Status.InProgress",
+        "color": "1D76DB",
+        "description": "리뷰가 진행 중인 PR입니다. 해당 Label은 현재 PR의 진행 상태 확인을 위해 사용됩니다."
+    },
+    {
+        "name": "Status.OnHold",
+        "color": "F9D0C4",
+        "description": "리뷰가 중단된 PR입니다. 해당 Label은 현재 PR의 진행 상태 확인을 위해 사용됩니다."
+    },
+    {
+        "name": "Status.Review",
+        "color": "C2E0C6",
+        "description": "리뷰가 필요한 PR입니다. 해당 Label은 현재 PR의 진행 상태 확인을 위해 사용됩니다."
+    },
+    {
+        "name": "Type.Question",
+        "color": "D876E3",
+        "description": "질문 요청할 사항에 대해 해당 라벨을 통해 표시하세요."
+    },
+    {
+        "name": "Type.Discussion",
+        "color": "8A8A8A",
+        "description": "토론이 필요한 사항에 대해 해당 라벨을 통해 표시하세요."
+    },
+    {
+        "name": "HelpWanted",
+        "color": "008672",
+        "description": "도움이 필요한 사항에 대해 해당 라벨을 통해 표시하세요."
     }
 ]

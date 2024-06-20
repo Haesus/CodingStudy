@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const accessToken = '';
 const labelsPath = 'labels.json';
-const repo = 'Haesus/JDreamer-DJ';
+const repo = 'Haesus/repo';
 
 // Label의 내용 변경
 fs.readFile(labelsPath, 'utf8', (err, data) => {
