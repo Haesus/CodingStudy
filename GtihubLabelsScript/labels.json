@@ -2,7 +2,7 @@
     {
         "name": "Feature",
         "color": "0E8A16",
-        "description": "기능이 추가될 사항이 있을 경우 해당 라벨을 통해 표시하세요."
+        "description": "기능이 추가되거나 수정될 사항이 있을 경우 해당 라벨을 통해 표시하세요."
     },
     {
         "name": "Documentation",
@@ -13,11 +13,6 @@
         "name": "Bug / HotFix",
         "color": "B60205",
         "description": "버그나 치명적인 수정사항이 발생했을 경우 해당 라벨을 통해 표시하세요."
-    },
-    {
-        "name": "Fix",
-        "color": "FBCA04",
-        "description": "수정될 사항이 있을 경우 해당 라벨을 통해 표시하세요."
     },
     {
         "name": "Refactoring",
@@ -33,6 +28,11 @@
         "name": "BackEnd",
         "color": "5319E7",
         "description": "백엔드 단 작업일 경우 해당 라벨을 통해 표시하세요."
+    },
+    {
+        "name": "Design",
+        "color": "fbca04",
+        "description": "UI와 디자인과 같은 작업일 경우 해당 라벨을 통해 표시하세요."
     },
     {
         "name": "Priority.High",
