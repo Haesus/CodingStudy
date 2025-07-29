@@ -37,6 +37,8 @@ struct ContentView: View {
                 Button("Load from Keychain") {
                     if let loaded = KeyChainManager.shared.load(key: "userInput") {
                         loadedValue = loaded
+                    } else {
+                        loadedValue = "데이터 불러오기에 실패했습니다."
                     }
                 }
                 .padding()

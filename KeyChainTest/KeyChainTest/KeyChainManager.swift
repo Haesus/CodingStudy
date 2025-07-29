@@ -19,10 +19,13 @@ final class KeyChainManager {
                 kSecAttrAccount as String: key,
                 kSecValueData as String: data
             ]
+            
             SecItemDelete(query as CFDictionary) // 기존 값 제거
             let status = SecItemAdd(query as CFDictionary, nil)
+            
             return status == errSecSuccess
         }
+        
         return false
     }
 
@@ -33,15 +36,14 @@ final class KeyChainManager {
             kSecReturnData as String: true,
             kSecMatchLimit as String: kSecMatchLimitOne
         ]
-
+        
         var dataTypeRef: AnyObject?
         let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
-
-        if status == errSecSuccess,
-           let retrievedData = dataTypeRef as? Data,
-           let value = String(data: retrievedData, encoding: .utf8) {
+        
+        if status == errSecSuccess, let retrievedData = dataTypeRef as? Data, let value = String(data: retrievedData, encoding: .utf8) {
             return value
         }
+        
         return nil
     }
 
@@ -50,7 +52,9 @@ final class KeyChainManager {
             kSecClass as String: kSecClassString,
             kSecAttrAccount as String: key
         ]
+        
         let status = SecItemDelete(query as CFDictionary)
+        
         return status == errSecSuccess
     }
 }
