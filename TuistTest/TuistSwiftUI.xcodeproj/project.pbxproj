@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -186,13 +186,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 167FFD21B9FE1D95D035C2DF /* Build configuration list for PBXProject "TuistSwiftUI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				ko,
 				Base,
 				en,
 			);
@@ -247,7 +248,7 @@
 				CODE_SIGN_ENTITLEMENTS = App/TuistSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3TGR3P459K;
+				DEVELOPMENT_TEAM = S754RVHWQH;
 				ENABLE_PREVIEWS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -262,14 +263,21 @@
 					"$(inherited)",
 					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Haesus.com.github.tuistswiftui;
 				PRODUCT_NAME = TuistSwiftUIApp;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -284,7 +292,7 @@
 				CODE_SIGN_ENTITLEMENTS = App/TuistSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3TGR3P459K;
+				DEVELOPMENT_TEAM = S754RVHWQH;
 				ENABLE_PREVIEWS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +307,11 @@
 					"$(inherited)",
 					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
 				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap";
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xcc",
+					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/ReactorKitRuntime/ReactorKitRuntime.modulemap",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Haesus.com.github.tuistswiftui;
 				PRODUCT_NAME = TuistSwiftUIApp;
 				SDKROOT = iphoneos;
