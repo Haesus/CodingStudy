@@ -1,24 +1,40 @@
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## User settings
-xcuserdata/
-*.xcconfig
-
-## DS_Store ignore
+# ===============================
+# macOS (Finder/Spotlight/TimeMachine 등 시스템 잡파일)
+# ===============================
 .DS_Store
 ._.DS_Store
 **/.DS_Store
 **/._.DS_Store
+.AppleDouble
+.LSOverride
+*.icloud
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+.apdisk
 
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
-*.xcscmblueprint
-*.xccheckout
+# ===============================
+# Xcode & Swift (iOS/macOS 개발 전반)
+# ===============================
+xcuserdata/                    # 사용자별 Xcode 설정
+*.xcconfig                     # 로컬 빌드 설정 파일
+!*.xcconfig.template           # ← 템플릿은 허용
+DerivedData/                   # Xcode 빌드 캐시
+build/                         # Xcode/기타 빌드 산출물
+*.hmap                         # 헤더 맵
+*.xcscmblueprint               # Xcode 8- 소스 컨트롤
+*.xccheckout                   # Xcode 8- 소스 컨트롤
 
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-build/
-DerivedData/
+# Xcode 3~4 시대 유물 (대개 필요 없음)
 *.moved-aside
 *.pbxuser
 !default.pbxuser
@@ -29,74 +45,81 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
-## Obj-C/Swift specific
-*.hmap
+# ===============================
+# Tuist (iOS 프로젝트 매니저)
+# ===============================
+TuistTest/Tuist/.build
+TuistTest/Tuist/.swiftpm
+TuistTest/.swiftpm
+TuistTest/*.xcworkspace
+TuistTest/*.xcodeproj
+**/Tuist/.build          ## Tuist 내부에 생성되는 SPM 라이브러리 (모든 깊이)
+**/Tuist/.swiftpm       ## Tuist 내부에 관리되는 산출물 (모든 깊이)
+# **/*.xcworkspace
+.tuist/                     ## Tuist 내부 캐시
+Tuist/Derived/              ## Tuist 빌드 산출물
+Tuist/Dependencies/         ## Tuist 의존성 캐시
+# *.xcodeproj                 ## Tuist generate 결과물 (버전관리 불필요)
+# *.xcworkspace               ## Tuist generate 결과물 (버전관리 불필요)
 
-## App packaging
+# ===============================
+# iOS 패키징/심볼
+# ===============================
 *.ipa
-*.dSYM.zip
 *.dSYM
+*.dSYM.zip
 
-## Playgrounds
+# ===============================
+# Swift Playgrounds
+# ===============================
 timeline.xctimeline
 playground.xcworkspace
 
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-#
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
+# ===============================
+# Swift Package Manager (SPM)
+# ===============================
+.build/                        # 빌드 출력
+.swiftpm/                      # SPM 메타 데이터(일반적으로 무시)
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+/Packages                      # 구 SPM 의존 폴더
+Package.resolved               # 🔧 재현성 위해 커밋 원하면 이 라인 주석 처리
 
-.build/
-
+# ===============================
 # CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
-#
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+# ===============================
+Pods/                          # 보통 미커밋 권장
+*.xcworkspace                  # 워크스페이스 산출물
 
+# ===============================
 # Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
+# ===============================
 Carthage/Build/
+# Carthage/Checkouts           # 필요 시 활성화
 
-# Accio dependency management
+# ===============================
+# Accio (iOS 의존성 매니저)
+# ===============================
 Dependencies/
 .accio/
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
+# ===============================
+# fastlane (iOS 배포/테스트 자동화)
+# ===============================
+fastlane/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
+# ===============================
+# Code Injection for Xcode (개발 중 런타임 코드 주입)
+# ===============================
 iOSInjectionProject/
 
-# Logs
+# ===============================
+# 공통 로그/리포트/런타임(pids)
+# ===============================
 logs
 *.log
 npm-debug.log*
@@ -104,125 +127,173 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# Runtime data
 pids
 *.pid
 *.seed
 *.pid.lock
 
-# Directory for instrumented libs generated by jscoverage/JSCover
-lib-cov
-
-# Coverage directory used by tools like istanbul
+# ===============================
+# JavaScript/TypeScript 생태계 (Node, 웹 번들러 등)
+# ===============================
+node_modules/
+jspm_packages/                 # JSPM
+web_modules/                   # Snowpack
+.cache                         # parcel/기타
+.parcel-cache
+.next                          # Next.js
+out                            # Next.js export
+.nuxt                          # Nuxt.js
+dist                           # 일반 빌드 출력
+.vuepress/dist                 # VuePress v1
+.temp                          # VuePress v2 temp
+.docusaurus                    # Docusaurus
+.cache/                        # Gatsby
 coverage
 *.lcov
-
-# nyc test coverage
 .nyc_output
-
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Bower dependency directory (https://bower.io/)
-bower_components
-
-# node-waf configuration
-.lock-wscript
-
-# Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directories
-node_modules/
-jspm_packages/
-
-# Snowpack dependency directory (https://snowpack.dev/)
-web_modules/
-
-# TypeScript cache
+# TypeScript
 *.tsbuildinfo
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Optional stylelint cache
-.stylelintcache
-
-# Microbundle cache
+# Microbundle / Rollup TS 캐시
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next
-out
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Gatsby files
-.cache/
-# Comment in the public line in if your project uses Gatsby and not Next.js
-# https://nextjs.org/blog/next-9-1#public-directory-support
-# public
-
-# vuepress build output
-.vuepress/dist
-
-# vuepress v2.x temp and cache directory
-.temp
-.cache
-
-# Docusaurus cache and generated files
-.docusaurus
-
-# Serverless directories
-.serverless/
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
-
-# TernJS port file
-.tern-port
-
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
-# yarn v2
+# Bower
+bower_components
+# node-waf
+.lock-wscript
+# Addons
+build/Release
+# Snowpack/Legacy
+web_modules/
+# Yarn 2 (Berry) & PnP
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+.yarn-integrity
+# REPL/Pack
+.node_repl_history
+*.tgz
+# ESLint/Stylelint 캐시
+.eslintcache
+.stylelintcache
+# Microbundle cache (중복 보호용 주석)
+# .rpt2_cache/ 등 위에 포함됨
+
+# ===============================
+# Static site / serverless / 기타 도구
+# ===============================
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+
+# ===============================
+# 환경 변수/시크릿 (백엔드/프론트 공통)
+# ===============================
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env.*                       # 여러 환경용 패턴
+.netrc                       # 인증 정보 파일 (보안상 제외)
+
+# ===============================
+# Visual Studio / .NET / Windows 빌드 아티팩트
+# ===============================
+bin/
+obj/
+out/
+publish/
+artifacts/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Ll]og/
+[Ll]ogs/
+*.dll
+*.exe
+*.pdb
+*.config
+.vs/
+*.suo
+*.user
+.vsconfig
+.mono/
+project.lock.json
+project.fragment.lock.json
+ScaffoldingReadMe.txt
+# 설정/시크릿 (프로젝트별 정책에 맞게)
+appsettings.json
+appsettings.*.json
+secrets.json
+# NuGet 패키지
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# ===============================
+# 테스트/리포트/코드 스타일(일부 도구)
+# ===============================
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+StyleCopReport.xml
+
+# ===============================
+# Windows 시스템 파일 & 인스톨러
+# ===============================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# ===============================
+# IDE/에디터 설정 (공유 불필요한 로컬 설정)
+# ===============================
+.vscode/*
+.vscode-server/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.iml
+*.code-workspace
+
+# ===============================
+# 변경 히스토리/로컬 캐시(에디터 플러그인 등)
+# ===============================
+.localhistory/
+.vshistory/
+.history/
+
+# ===============================
+# Node.js API 서버/운영 툴 (pm2 등)
+# ===============================
+# 환경/로그는 위 공통 섹션 참고
+pids
+*.pid
+*.seed
+*.pid.lock
+*~
+
+# ===============================
+# 기타(필요 시 프로젝트 맞춰 조정)
+# ===============================
+# public/           # Gatsby가 아니라 Next.js면 주석 유지
+# Carthage/Checkouts  # 필요 시 주석 해제
+# Packages/           # SPM 소스 커밋 방지용 (정책에 따라)
