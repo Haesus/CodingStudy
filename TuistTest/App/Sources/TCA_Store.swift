@@ -130,27 +130,30 @@ struct GlobalAlertFeature {
 struct SheetToggleFeature {
     @ObservableState
     struct State: Equatable {
-        @BindingState var isPresented: Bool = false
+        var isSheetPresented: Bool = false
     }
 
     enum Action: BindableAction {
         case binding(BindingAction<State>)
-        case open
-        case close
+        case setSheet(isPresented: Bool)
     }
+    
+    private enum CancelID { case load }
 
-    var body: some ReducerOf<Self> {
+    var body: some Reducer<State, Action> {
         BindingReducer()
         Reduce { state, action in
             switch action {
-            case .open:
-                state.isPresented = true
-                return .none
-            case .close:
-                state.isPresented = false
-                return .none
-            case .binding:
-                return .none
+                case .binding:
+                    return .none
+                case .setSheet(isPresented: true):
+                    state.isSheetPresented = true
+                    return .none
+                        .cancellable(id: CancelID.load)
+                case .setSheet(isPresented: false):
+                    state.isSheetPresented = false
+                    return .none
+                        .cancellable(id: CancelID.load)
             }
         }
     }
