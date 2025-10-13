@@ -25,9 +25,9 @@ struct CountersFeature {
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
-            case .increment:
-                state.number += 1
-                return .none
+                case .increment:
+                    state.number += 1
+                    return .none
             }
         }
     }
@@ -194,7 +194,7 @@ struct ParentFeature {
                 state.counter.gradeClass = max(0, current - 1)
                 return .none
 
-            case .counter, .globalAlert, .sheetToggle:
+                case .counter, .globalAlert, .sheetToggle:
                 return .none
             }
         }
